@@ -38,6 +38,9 @@ SOS (SAVE OUR SOULS) is a very important feature to our application whether its 
 * Tutorials about self defense techniques and learning to fight back.
 * Helpline Numbers in case of an emergency.
 
+Working towards our motto we can create a social network where women can share their daily lives inspiring stories where they fought against all odds to achieve success. They can post pictures of how they managed the difficult conditions with the help of SafeGuides and SafeHouses. It can be stories how SOS really saved their souls and helped them in the tough conditions.
+It can be a way of getting people encouraged and excited to come forward and volunteer in spreading awareness about Women Safety and also ignite a fire in them to help others and encourage others too.
+
 ## Getting the Sources
 First, fork the WeCare2020 repository so that you can make a pull request. Then, clone your fork locally: git clone https://github.com/[your-github-account]/WeCare2020.git Occasionally you will want to merge changes in the upstream repository (the official code repo) with your fork.
 ```
