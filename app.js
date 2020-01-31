@@ -239,6 +239,10 @@ app.get("/help", function(req, res) {
   res.render("helpline");
 });
 
+app.get("/about", function(req, res) {
+  res.render("about");
+});
+
 app.get("/landing", function(req, res) {
   res.render("landing");
 });
