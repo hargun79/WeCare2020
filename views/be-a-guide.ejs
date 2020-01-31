@@ -1,0 +1,178 @@
+<% include ./partials/header %>
+
+<div class="container form-contain">
+  <div class="card">
+    <h5 class="card-header info-color white-text text-center py-4">
+      Sign Up
+    </h5>
+
+    <div class="card-body px-lg-5 mt-5 pt-0">
+      <form method="POST" class="md-form" style="color: #757575;">
+        <div class="form-group row">
+          <!-- <label for="materialRegisterFormFirstName" class="col-sm-2 col-form-label">First name</label> -->
+          <div class="col-sm-10">
+            <input
+              type="text"
+              name="firstName"
+              id="materialRegisterFormFirstName"
+              class="form-control"
+              placeholder="First Name"
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <!-- <label for="materialRegisterFormLastName" class="col-sm-2 col-form-label">Last name</label> -->
+          <div class="col-sm-10">
+            <input
+              type="text"
+              name="lastName"
+              id="materialRegisterFormLastName"
+              class="form-control"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <!-- <label for="materialRegisterFormEmail" class="col-sm-2 col-form-label">E-mail</label> -->
+          <div class="col-sm-10">
+            <input
+              type="email"
+              name="email"
+              id="materialRegisterFormEmail"
+              class="form-control"
+              placeholder="Email ID"
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <!-- <label for="materialRegisterFormPassword" class="col-sm-2 col-form-label">Password</label> -->
+          <div class="col-sm-10">
+            <input
+              type="password"
+              name="password"
+              id="materialRegisterFormPassword"
+              class="form-control"
+              aria-describedby="materialRegisterFormPasswordHelpBlock"
+              placeholder="Password (At least 8 characters and 1 digit)"
+            />
+          </div>
+        </div>
+
+        <!-- <input
+            type="text"
+			name="location"
+            id="materialRegisterFormLocation"
+            class="form-control"
+            aria-describedby="materialRegisterFormLocation"
+          />
+          <label for="materialRegisterFormLocation">Your Current Location</label>
+			 -->
+
+        <div class="form-group row">
+          <!-- <label for="materialRegisterFormPhone" class="col-sm-2 col-form-label">Phone Number</label> -->
+          <div class="col-sm-10">
+            <input
+              type="number"
+              name="phone"
+              id="materialRegisterFormPhone"
+              class="form-control"
+              aria-describedby="materialRegisterFormPhoneHelpBlock"
+              placeholder="Phone Number"
+            />
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <!-- <label for="materialRegisterFormLastName" class="col-sm-2 col-form-label">Location</label> -->
+          <div class="col-sm-10">
+            <input
+              type="text"
+              name="location"
+              id="materialRegisterFormLastName"
+              class="form-control"
+              placeholder="Your Location"
+            />
+          </div>
+        </div>
+        <div class="form-check row" style="clear:left">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="materialRegisterFormNewsletter"
+          />
+          <label class="form-check-label" for="materialRegisterFormNewsletter"
+            >I confirm that I am over 18 years old and I am a female.</label
+          >
+        </div>
+
+        <div class="form-group row">
+          <select class="mdb-select md-form initialized" id="select">
+            <option value="" disabled selected>Choose Identity Proof</option>
+            <option value="1">Aadhaar Card</option>
+            <option value="2">Voter Card</option>
+            <option value="3">PAN Card</option>
+          </select>
+        </div>
+        <div class="form-group row">
+          <small class="form-text ">
+            Upload Identity Proof
+          </small>
+          <div class="file-field pl-4">
+            <div class="btn btn-primary btn-sm float-left ">
+              <input
+                type="file"
+                name="docfile"
+                id="fileInput"
+                accept=".doc, .docx, .pdf, .jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <small class="form-text ">
+            Upload Profile Picture
+          </small>
+          <div class="file-field pl-4">
+            <div class="btn btn-primary btn-sm float-left ">
+              <input
+                type="file"
+                name="picfile"
+                id="fileInput"
+                accept=".jpg, .png"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-check" style="clear:left">
+          <button
+            class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+            type="submit"
+          >
+            Sign Up
+          </button>
+
+          <hr />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  crossorigin="anonymous"
+></script>
+<% include ./partials/footer %>

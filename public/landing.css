@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  text-align: center;
+}
+
+.helpsomeone {
+  background: url("https://svgshare.com/i/HdY.svg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  border-right: 2px solid #f4f4f4;
+}
+
+.gethelp {
+  background: url("https://svgshare.com/i/Hew.svg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-columns {
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.main-columns button {
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 2rem;
+  position: relative;
+  top: 15vh;
+  color: black;
+  border: 5px solid #3d33e8;
+}
+
+.main-columns button a {
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .help-someone,
+  .get-help {
+    height: 45vh;
+  }
+}

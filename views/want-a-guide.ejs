@@ -1,0 +1,120 @@
+<% include ./partials/header %>
+<!-- <div class="text-center mx-auto col-sm-8 ">
+  <input
+    class="input-lg"
+    type="text"
+    id="myInput"
+    onkeyup="myFunction()"
+    placeholder="Search for locations.."
+    title="Type in a name"
+  />
+</div> -->
+<div class="form-group col-sm-8 text-center mx-auto">
+  <label for="inputdefault">Search for locations</label>
+  <input
+    class="form-control"
+    id="myInput"
+    type="text"
+    type="text"
+    id="myInput"
+    onkeyup="myFunction()"
+    placeholder="Search for locations.."
+    title="Type in a name"
+  />
+</div>
+
+<ul id="location" style="list-style-type: none;" class="text-center">
+  <% guides.forEach(function(guide){ %>
+
+  <li style="display:inline;">
+    <a class="px-4" href="/want-a-guide/<%= guide._id %>"
+      ><%= guide.location %></a
+    >
+  </li>
+  <!-- <li><a href="#">Rajouri Garden</a></li>
+
+	  <li><a href="#">Motinagar</a></li>
+	  <li><a href="#">Vikaspuri</a></li>
+
+	  <li><a href="#">Pitampura</a></li>
+	  <li><a href="#">Ashok Vihar</a></li>
+	  <li><a href="#">Tilaknagar</a></li> -->
+  <% }); %>
+</ul>
+<!-- ////////////////// -->
+
+<div id="guid-list">
+  <h4 style="text-align: center"><i>LIST OF ALL GUIDES</i></h4>
+
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("location");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+  <% guides.forEach(function(guide){ %>
+  <div class="table-responsive text-center mx-auto">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td style="width: 50%">
+            <%= guide.firstName %> <%= guide.lastName %>
+          </td>
+          <td style="width: 50%">
+            <%= guide.phone %>
+            <a
+              class="info"
+              href="/want-a-guide/<%= guide._id %>"
+              class="btn btn-sm btn-primary"
+            >
+              <button class="btn btn-success ml-5 btn-sm">more info!</button></a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <% }) %>
+</div>
+
+<!-- ///////MAP AREA/////////////// 
+	  
+	  
+    <div class="container">
+        <div class="input-group mt-5 mb-3">
+            <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default" placeholder="Enter your location">
+            <div class="input-group-append  ">
+              <span class="input-group-text block" id="inputGroup-sizing-default">Search <i class="fas fa-search-location ml-1">				</i> </span>
+
+            </div>
+        </div>
+
+        <div class="map-area mt-5"></div>
+    </div> -->
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  crossorigin="anonymous"
+></script>
