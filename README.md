@@ -5,6 +5,8 @@ Hosted Website: https://wecare2020.herokuapp.com
 
 Hosted Presentation Link: https://wecare2020.netlify.com
 
+Prototype Video Link: https://www.youtube.com/watch?v=kNQuTlKCpN0&feature=youtu.be
+
 ## Features of our WebApp: 
 
 1. SafeGuides.
