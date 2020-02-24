@@ -10,10 +10,12 @@ var seedDB = require("./seeds");
 var request = require("request");
 const MongoClient = require("mongodb").MongoClient;
 var Guide = require("./models/guide");
+var seedDB1 = require("./seeds1");
 
 app.use(bodyparser.urlencoded({ extended: true }));
 
 seedDB();
+seedDB1();
 
 mongoose.connect(
   "mongodb+srv://hello:world@cluster0-gjjsl.mongodb.net/test?retryWrites=true&w=majority"
