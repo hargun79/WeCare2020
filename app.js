@@ -13,7 +13,7 @@ var Guide = require("./models/guide");
 app.use(bodyparser.urlencoded({ extended: true }));
 
 mongoose.connect(
-  "mongodb+srv://hello:world@wecare-qkygu.mongodb.net/test?retryWrites=true&w=majority"
+  "mongodb+srv://hello:world@cluster0-gjjsl.mongodb.net/test?retryWrites=true&w=majority"
 );
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
