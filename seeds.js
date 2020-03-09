@@ -5,7 +5,7 @@ var User = require("./models/user");
 var passport = require("passport");
 var LocalStrategy = require("passport-local");
 mongoose.connect(
-  "mongodb+srv://hello:world@cluster0-gjjsl.mongodb.net/test?retryWrites=true&w=majority"
+  "mongodb+srv://hello:world@wecare-qkygu.mongodb.net/test?retryWrites=true&w=majority"
 );
 
 app.use(
