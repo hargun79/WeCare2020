@@ -17,13 +17,8 @@ app.use(bodyparser.urlencoded({ extended: true }));
 seedDB();
 seedDB1();
 
-mongoose.connect(
-  "mongodb+srv://hello:world@wecare-qkygu.mongodb.net/test?retryWrites=true&w=majority"
-);
-mongoose.set("useNewUrlParser", true);
+mongoose.connect("mongodb+srv://SINGHHR:hello123@cluster0-4497t.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true});
 mongoose.set("useFindAndModify", false);
-mongoose.set("useCreateIndex", true);
-mongoose.set("useUnifiedTopology", true);
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -237,10 +232,6 @@ app.get("/data", function(req, res) {
 
 app.get("/help", function(req, res) {
   res.render("helpline");
-});
-
-app.get("/about", function(req, res) {
-  res.render("about");
 });
 
 app.get("/landing", function(req, res) {
