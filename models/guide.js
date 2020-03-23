@@ -1,7 +1,8 @@
 var mongoose = require("mongoose");
-mongoose.connect(
-  "mongodb+srv://hello:world@cluster0-gjjsl.mongodb.net/test?retryWrites=true&w=majority"
-);
+
+mongoose.connect("mongodb+srv://SINGHHR:hello123@cluster0-4497t.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.set("useFindAndModify", false);
+
 var guideSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
