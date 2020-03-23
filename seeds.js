@@ -4,9 +4,8 @@ var mongoose = require("mongoose");
 var User = require("./models/user");
 var passport = require("passport");
 var LocalStrategy = require("passport-local");
-mongoose.connect(
-  "mongodb+srv://hello:world@wecare-qkygu.mongodb.net/test?retryWrites=true&w=majority"
-);
+mongoose.connect("mongodb+srv://SINGHHR:hello123@cluster0-4497t.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.set("useFindAndModify", false);
 
 app.use(
   require("express-session")({
