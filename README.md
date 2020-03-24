@@ -61,4 +61,3 @@ in the terminal just run
 ```
 node app.js
 ```
-> Note : For best user experience run the project at localhost i.e, downloading the project.
