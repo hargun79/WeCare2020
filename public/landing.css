@@ -47,7 +47,7 @@ body {
   color: black;
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .help-someone {
     height: 45vh;
     display: flex;
@@ -55,9 +55,6 @@ body {
   flex-direction: row;
   flex-basis: 100%;
   }
-}
-
-@media(max-width: 1000px) {
   .get-help {
     height: 45vh;
     display: flex;
