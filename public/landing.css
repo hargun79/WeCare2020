@@ -45,5 +45,9 @@
   .help-someone,
   .get-help {
     height: 45vh;
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 100%;
   }
 }
