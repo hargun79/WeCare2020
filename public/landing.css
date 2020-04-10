@@ -41,7 +41,7 @@
   color: black;
 }
 
-@media only screen and (max-width: 1000px) {
+@media(max-width: 1000px) {
   .help-someone {
     height: 45vh;
     display: flex;
@@ -51,7 +51,7 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media(max-width: 1000px) {
   .get-help {
     height: 45vh;
     display: flex;
