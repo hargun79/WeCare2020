@@ -8,7 +8,7 @@
 }
 
 .helpsomeone {
-  background: url("https://svgshare.com/i/HdY.svg");
+  background: url("./images/HelpSomeone.svg");
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -16,7 +16,7 @@
 }
 
 .gethelp {
-  background: url("https://svgshare.com/i/Hew.svg");
+  background: url("./images/GetHelp.svg");
   background-size: cover;
   background-position: center;
   height: 90vh;
