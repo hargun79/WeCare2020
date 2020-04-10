@@ -42,7 +42,16 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .help-someone,
+  .help-someone {
+    height: 45vh;
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .get-help {
     height: 45vh;
     display: flex;
