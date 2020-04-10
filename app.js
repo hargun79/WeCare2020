@@ -21,7 +21,7 @@ mongoose.connect("mongodb+srv://SINGHHR:hello123@cluster0-4497t.mongodb.net/test
 mongoose.set("useFindAndModify", false);
 
 app.set("view engine", "ejs");
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 app.use(express.static("./library"));
 app.use(methodOverride("_method"));
 
