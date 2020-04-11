@@ -19,6 +19,7 @@ body {
   background-position: center;
   height: 90vh;
   border-right: 2px solid #f4f4f4;
+  width: 50%;
 }
 
 .gethelp {
@@ -26,6 +27,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 90vh;
+  width: 50%;
 }
 
 .main-columns {
@@ -48,18 +50,11 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .help-someone {
-    height: 45vh;
-    display: flex;
+  div div {
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   flex-basis: 100%;
-  }
-  .get-help {
-    height: 45vh;
-    display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-basis: 100%;
+  justify-content: center;
   }
 }
