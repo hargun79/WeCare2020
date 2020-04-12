@@ -110,15 +110,20 @@ app.get("/sos", function(req, res) {
   res.render("SOS");
 });
 
+app.get('*', function(req, res,next){
+    res.locals.user = req.user || null;
+    next();
+})
+
 app.get("/loc", function(req, res) {
-  var lat = req.query.lat;
-  var lng = req.query.lng;
-  var url =
-    "mailto:wecare2020@gmail.com?subject=I am in Danger&body=I am sending you my location. My current latitude is " +
+      var lat = req.query.lat;
+      var lng = req.query.lng;
+      var url =
+    "mailto:" + req.user.emergencyContactEmail + "?subject=I am in Danger&body=I am sending you my location. My current latitude is " +
     lat +
     " and longitude is " +
     lng;
-  res.redirect(url);
+      res.redirect(url);
 });
 
 // =================
@@ -139,7 +144,8 @@ app.post("/signup", function(req, res) {
     email: req.body.email,
     bio: req.body.bio,
     image: req.body.image,
-    phoneNumber: req.body.phoneNumber
+    phoneNumber: req.body.phoneNumber,
+    emergencyContactEmail: req.body.emergencyContactEmail
   });
   User.register(newUser, req.body.password, function(err, user) {
     if (err) {
@@ -194,7 +200,8 @@ app.put("/user/:id", function(req, res) {
     email: req.body.email,
     bio: req.body.bio,
     image: req.body.image,
-    phoneNumber: req.body.phoneNumber
+    phoneNumber: req.body.phoneNumber,
+    emergencyContactEmail: req.body.emergencyContactEmail
   };
 
   User.findByIdAndUpdate(req.params.id, updatedUser, function(err, foundUser) {

@@ -11,7 +11,8 @@ var UserSchema = new mongoose.Schema({
   email: String,
   bio: String,
   image: String,
-  phoneNumber: Number
+  phoneNumber: Number,
+  emergencyContactEmail: String
 });
 
 UserSchema.plugin(passportLocalMongoose);
