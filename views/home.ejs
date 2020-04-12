@@ -3,34 +3,22 @@
 
 <style>
 body,html{
-  background: #f4f4f4;
+  background: linear-gradient(#fceabb,#f8b500);
 }
-.carousel .carousel-item {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.carousel .carousel-item:first-of-type {
-    background-image: url("https://images.unsplash.com/photo-1520960858461-ac671067213e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1073&q=80");
-}
-
-.carousel .carousel-item:nth-of-type(2) {
-    background-image: url("https://cdn.pixabay.com/photo/2014/04/02/14/48/children-306607_1280.jpg");
-}
-
-.carousel .carousel-item:last-of-type {
-    background-image: url("https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_1280.jpg");
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    width: 50px;
-    height: 50px;
-}
-
 </style>
-<style>
+<div class="notices">
+    <marquee>
+    
+       
+        <span><a href="http://it.delhigovt.nic.in/writereaddata/Cir20193411.pdf" style="color:#0055a0">*Issue medical card to retired employees of DTC</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span><a href="http://it.delhigovt.nic.in/writereaddata/Cir20193412.pdf" style="color:#0055a0">*Regarding different Hindi Competitions 2019-2020</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span><a href="http://it.delhigovt.nic.in/writereaddata/Cir20193408.pdf" style="color:#0055a0">*Hindi Tippan Competition</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span><a href="http://it.delhigovt.nic.in/writereaddata/Cir20193409.pdf" style="color:#0055a0">*Link Officer</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span><a href="http://it.delhigovt.nic.in/writereaddata/Cir20193407.58.48_1.pdf" style="color:#0055a0">*Corporation(DTC)  Link Officers</a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    
+    </marquee>
+    </div>
+    <style>
     main {
   display: flex;
   justify-content: center;
@@ -40,177 +28,110 @@ p main .text{
   font-size: 1rem;
 }
 .text {
+  background: url(https://media.giphy.com/media/3o6Ztb45EYezY9x9gQ/giphy.gif);
   background-size: contain;
   background-position: top left;
   -webkit-background-clip: text;
+  color: transparent;
   font-size: 3rem;
   font-weight: bold;
   font-family: sans-serif;
 }
 </style>
-    <title>WeCare</title>
-  </head>
-  <body> 
 
-  <!-- Slider -->
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active"></div>
-    <div id="target" class="carousel-item"></div>
-    <div class="carousel-item"></div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<style>
-* {box-sizing:border-box}
-
-.slider-images{
-	height: 100%;
-	width: 100%;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text1 {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 9.5s;
-  animation-name: fade;
-  animation-duration: 9.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-</style>
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 10000); // Change image every 10 seconds
-}
-
-</script>
-<!-- Slider ends -->
-<!--          
+    <div class="container-fluid">
+       <div class="jumbotron jumbotron-fluid" style="background: linear-gradient(#EF3B36,#FFFFFF)" >
       <div class="container-fluid">
-    
-    
-    
+          <main>
+              <div class="text container-fluid text-center">
+                GO TRANSPORT
+                <br>
+                <div style="font-size : 0.5em" >Travelling to a better Future....</div>
+                
+              </div>
+             
+            </main>
+        
+      </div>
+    </div>
+  </div> 
+  
+    <title>Go Transport</title>
+  </head>
+  <body>
 
-    
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+        
+      <div class = "container-fluid">
+          <div class="row">
+              <div class="col-sm-none col-md-2 col-lg-2 col-xl-2">
+              </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="card quote rounded border border-warning" style="background: linear-gradient(#ffd89b,#19547b);height: 23rem; " >
+      <div class="card-body cardedit">
+  <blockquote class="blockquote ">
+  <br>
+  <br>
+<p class="d-flex align-self-center">“Bicycles are the most efficient vehicles on the planet, 50 times more efficient than cars, and twice as efficient as walking.”</p>
+    <footer class="blockquote-footer" style="color: black">Godo Stoyke
+</footer>
 
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-around">
-    <div class="card" style="width: 16rem;height: 16rem;background: linear-gradient(#7F7FD5,#86A8E7,#91EAE4) ">
+  </blockquote>
+
+
+</div>
+</div>
+      </div>
+      
+      <div class="col-sm-12 sm-rounded col-md-4 col-lg-4 col-xl-4">
+          <figure class="figure">
+              <img class="figure-img img-fluid rounded border border-danger" src="https://engsw.b-cdn.net/wp-content/uploads/2017/05/C_caFWXVoAAcWi1.jpg">
+              <h3><figcaption class="figure-caption" style="color: black"  >WWE Superstars Promoting Public Transport</figcaption></h3>
+             </figure> 
+             </div>
+      <div class="col-sm-none col-md-1 col-lg-1 col-xl-1">
+
+      </div>
+          </div>
+        </div>      
+        <br><br>
+        <br><br>
+        <br><br>
+        
+        <div class="container-fluid">
+        <div class="row">
+    
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-around">
+   <div class="card" style="width: 18rem; height: 18rem; background: linear-gradient(#fceabb,#f8b500) ">
+      <div class="card-body">
+        <h5 class="card-title display-5 ">Rate Us</h5>
+        <h6 class="card-subtitle  text-muted display-5">Give your valuable feedback!</h6>
+        <p class="card-text h5 ">Your feedback helps us improve and helps us in giving you the best quality experience.</p>
+        <a href="#" class="card-link h4 ">Give Rating</a>
+        <a href="#" class="card-link h4">Leave a review</a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-around">
+    <div class="card" style="width: 18rem;height: 18rem; background: linear-gradient(#fceabb,#f8b500) ">
+      <div class="card-body">
+        <h5 class="card-title display-5">Send an email</h5>
+        <h6 class="card-subtitle text-muted display-5">Report Issues!</h6>
+        <p class="card-text h5">You can report us the issues you face while using the website and help us improve.</p>
+        <a class="card-link h4" href="mailto:gotranspo2k19@gmail.com" data-component="link" data-source="inlineLink" data-type="internalLink" data-ordinal="1">Send an e-mail</a>
+        <a href="#" class="card-link h4">Send a message</a>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-around">
+    <div class="card" style="width: 18rem;height: 18rem;background: linear-gradient(#fceabb,#f8b500) ">
       <div class="card-body">
         <h5 class="card-title display-5">About Us</h5>
         <h6 class="card-subtitle text-muted display-5">Know more!</h6>
@@ -221,75 +142,19 @@ function showSlides() {
     </div>
     </div>
     </div>
-    </div> -->
-    
-<div class="container-fluid pt-5">
-  <div class="row">
-   
-  <div class="present col-sm-6 mx-auto pl-5 pr-2">
-    <h2 class="text-center">PRESENT STATE OF OUR SOCIETY</h2>
-    <p>Safety of Women has become a major issue in India now. The crime rates against women in the country have only risen
-      to a
-      great extent. Women think twice before stepping out of their homes, especially at the night. This is, unfortunately,
-      the
-      sad reality of our country that lives in constant fear.Not a day goes by where you don’t hear of the news of a crime
-      against women in India.
-  
-      It is extremely painful to watch the status of women’s safety in India, especially in a country where women are
-      given
-      the stature of goddesses.</p>
-      <hr>
-  </div>
-
-  
-  
-  <div class="doing col-sm-6 mx-auto pr-5 pl-2">
-    <h2 class="text-center">WHAT ARE WE DOING HERE?</h2>
-    <p>We are trying to make people aware of the ignorance on the very sensitive issue of women safety. Our basic goal is to
-    make people realise their responsibilities towards this very issue. We using technology as a adhesive to bring together
-    people irrespective of culture and religion.</p>
-    <p>We also aim to eradicate all the social evils in the way of progress of women in today's society with the motto of
-    "Women Empowering Women".</p>
-    <hr class="mt-4">
-  </div>
-  </div>
-
-
-
-  </div>
-  <div class="doing content-fluid text-center pt-3 mx-5">
-    <h2>TO COUNTER THE PROBLEMS WE PRESENT YOU WITH THE FOLLOWING :</h2>
-    <p>We have developed a solution for any person who is stuck in an area unknown, here in this case a SafeGuide can be of
-    great help who can guide the person to the metro station,bus stop or any other station of commute.</p>
-    <ul>
-      <li>SafeGuides would be people who voluntarily come forward to help and do their part in handling the issue of women
-      safety.A Reputation Icon would be shown on the user account and it would help in ranking them in order of their good
-      deeds.</li>
-      <li>Connect with unknown people and become friends for a Lifetime. Sometimes one wishes to go to a particular event but
-      submits to the hesitation of going stag due to her safety reasons. We have included a pairing option which can help
-      women to pair with others and not only have companions to take along for a event but also help them make friends with
-      other women.</li>
-      <li>SOS (SAVE OUR SOULS) is a very important feature to our application whether its android/ios or web. It will send the
-      exact coordinates to the person to the emergency contact via SMS service in Android/IOS and via email on the website. We
-      have specially used the Geolocation Coordinates just so the emergency contact doesn't gets confused with the location on
-      the map and providing the coordinates would really help to locate the user exactly.</li>
-      <li>SafeHouse is the perfect addition to our application. Under this feature we have our database with the locations such as
-      Government Hospitals, Police Stations , Airports,24/7 Shops and Coffee Shops registered as SafeHouse locations. This
-      data would be discreet and would be located with the help of coordinates on the Google Maps application once the user
-      selects the location. If any women is not feeling safe and needs a safe place to be , she can search the SafeHouses near
-      her and locate to the nearest SafeHouse and wait for her ride or SafeGuide.</li>
-    </ul>
-    
-    <hr>
-  </div>
+    </div>
     <br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
     
 
     <div class="d-flex justify-content-start">
       <a id="goTopBtn" href="#"><i class="fas fa-arrow-up"></i></a>
     <br>
     <br>
-    </div>
     
-        
+    
+    
 <% include ./partials/footer %>    
