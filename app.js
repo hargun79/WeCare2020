@@ -115,7 +115,7 @@ app.get('*', function(req, res,next){
     next();
 })
 
-app.get("/loc", function(req, res) {
+app.get("/loc", isLoggedIn, function(req, res) {
       var lat = req.query.lat;
       var lng = req.query.lng;
       var url =
