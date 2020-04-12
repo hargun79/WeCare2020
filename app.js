@@ -14,8 +14,8 @@ var seedDB1 = require("./seeds1");
 
 app.use(bodyparser.urlencoded({ extended: true }));
 
-seedDB();
-seedDB1();
+//seedDB();
+//seedDB1();
 
 mongoose.connect("mongodb+srv://SINGHHR:hello123@cluster0-4497t.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true});
 mongoose.set("useFindAndModify", false);
