@@ -57,9 +57,29 @@ app.get("/home", function(req, res) {
   res.render("home");
 });
 
-app.get("/safehouse", function(req, res) {
-  res.render("safehouses");
+app.get("/safezone", function(req, res) {
+  res.render("safezone");
 });
+
+app.get("/safezone1", function(req, res){
+	res.render("safezone1");
+ });
+
+app.get("/safezone2", function(req, res){
+	res.render("safezone2");
+ });
+
+app.get("/safezone3", function(req, res){
+	res.render("safezone3");
+ });
+
+app.get("/safezone4", function(req, res){
+	res.render("safezone4");
+ });
+
+app.get("/safezone5", function(req, res){
+	res.render("safezone5");
+ });
 
 // Location
 // ========================
